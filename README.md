@@ -18,19 +18,22 @@ Alternatives to JSON:API includes: RESTful API and GraphQL.
 2. Interactivity is limited. Developers need to ovserve available fields and links in its reponses to enable the exploration of API, which is less ideal compared to GraphQL.
 
 ## 4
+```
 {
-  "type": "articles",
+  "type": "Flights",
   "id": "1",
   "attributes": {
-    "title": "Rails is Omakase"
+    "BelongTo": "Alaska Airlines",
+    "PassengersOnBoard": "284"
   },
   "relationships": {
-    "author": {
+    "Captain": {
       "links": {
-        "self": "/articles/1/relationships/author",
-        "related": "/articles/1/author"
+        "self": "/Flights/1/relationships/Captain",
+        "related": "/Flights/1/Captain"
       },
-      "data": { "type": "people", "id": "9" }
+      "data": { "type": "people", "id": "7" }
     }
   }
 }
+```
